@@ -5,7 +5,7 @@ body {
 
 div.navigation {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 100px 70% 10%;
 }
 
 .logo {
@@ -19,8 +19,11 @@ div.navigation {
   border: 2px solid black;
   border-radius: 5px;
   text-decoration: none;
-  margin: 2% 200px;
+  /* margin: 2% 200px; */
+  padding: 1%;
+  animation: logo 1s ease;
 }
+
 
 nav {
   grid-column: 2/3;
@@ -43,6 +46,13 @@ nav.socials {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@keyframes logo {
+  30% { transform: scale(1.2); }
+  40%, 60% { transform: rotate(-20deg) scale(1.2); }
+  50% { transform: rotate(20deg) scale(1.2); }
+  70% { transform: rotate(0deg) scale(1.2); }
+  100% { transform: scale(1); }
 }
 
 /* main */
@@ -92,7 +102,7 @@ div.background > .image2 {
   position: absolute;
   top: 25px;
   left: 30px;
-  border-radius: 40%;
+  border-radius: 50% 30% 30% 45% / 60% 40%;
   width: 400px;
   height: auto;
 }

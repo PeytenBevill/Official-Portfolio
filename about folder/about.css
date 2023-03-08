@@ -24,7 +24,6 @@ div.navigation {
   animation: logo 1s ease;
 }
 
-
 nav {
   grid-column: 2/3;
   margin-top: 2%;
@@ -47,6 +46,7 @@ nav.socials {
   justify-content: center;
   align-items: center;
 }
+
 @keyframes logo {
   30% { transform: scale(1.2); }
   40%, 60% { transform: rotate(-20deg) scale(1.2); }
@@ -58,56 +58,25 @@ nav.socials {
 /* main */
 
 .main {
-  margin: 10% 20%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  margin: 1% 20%;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
 }
 
-.column1 {
-  grid-column: 1/2;
+.firstParagraph {
+  margin-top: 4%;
 }
 
-div.column1 > p {
-  margin-top: 6%;
-}
-
-button.portfolio {
-  margin-top: 10%;
-  background-color: black;
-  border-radius: 7px;
-  border-color: black;
-  padding: 2%;
-  text-align: center;
-}
-button.portfolio > a {
-  color: white;
-  word-wrap: normal;
-  margin: 0%;
-}
-
-.column2 {
-  grid-column: 2/3;
-}
-div.background {
-  position: relative;
-  top: 0;
-  left: 0;
-  max-width: 432px;
-  min-width: 400px;
-}
-
-div.background > .image1 {
-  position: relative;
-  border-radius: 70% 30% 30% 60% / 60% 40%;
-  top: 0;
-  left: 0;
-}
-
-div.background > .image2 {
-  position: absolute;
-  top: 25px;
-  left: 30px;
-  border-radius: 50% 30% 30% 45% / 60% 40%;
-  width: 400px;
+img {
+  margin-top: 4%;
+  border-radius: 50%;
+  width: 432px;
   height: auto;
+}
+
+.secondParagraph {
+  margin-top: 4%;
 }

@@ -2,10 +2,8 @@ body {
 
 }
 
-
-div.navigation {
-  display: grid;
-  grid-template-columns: 100px 70% 10%;
+nav.navbar .navbar-expand-lg .bg-body-tertiary {
+  background-color: transparent;
 }
 
 .logo {
@@ -20,31 +18,20 @@ div.navigation {
   border-radius: 5px;
   text-decoration: none;
   /* margin: 2% 200px; */
-  padding: 1%;
+  padding: 0% 1%;
   animation: logo 1s ease;
 }
 
-nav {
-  grid-column: 2/3;
-  margin-top: 2%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 a {
-margin: 20px;
-font-family: sans-serif;
-text-decoration: none;
-color: black;
+  margin: 20px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: black;
 }
-
-nav.socials {
-  grid-column: 3/4;
-  margin-top: 2%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.nav-item.socials {
+  list-style: none;
 }
 
 @keyframes logo {

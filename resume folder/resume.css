@@ -1,11 +1,9 @@
 body {
-
+margin-bottom: 0px;
 }
 
-
-div.navigation {
-  display: grid;
-  grid-template-columns: 100px 70% 10%;
+nav.navbar .navbar-expand-lg .bg-body-tertiary {
+  background-color: transparent;
 }
 
 .logo {
@@ -20,31 +18,23 @@ div.navigation {
   border-radius: 5px;
   text-decoration: none;
   /* margin: 2% 200px; */
-  padding: 1%;
+  padding: 0% 1%;
   animation: logo 1s ease;
 }
 
-nav {
-  grid-column: 2/3;
-  margin-top: 2%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.nav-link {
+  font-size: 16px;
 }
 
 a {
-margin: 20px;
-font-family: sans-serif;
-text-decoration: none;
-color: black;
+  margin: 20px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: black;
 }
-
-nav.socials {
-  grid-column: 3/4;
-  margin-top: 2%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.nav-item.socials {
+  list-style: none;
+  font-size: 16px;
 }
 
 @keyframes logo {
@@ -59,14 +49,18 @@ nav.socials {
 
 div.grid {
   height: 100vh;
-  margin: 2% 25%;
-  display: grid;
+  margin: 0% 25%;
+  display: grid !important;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr .5fr .5fr 2fr;
-  gap: 5%;
+  gap: 4%;
   border-left: 2px solid #cfecd0;
   border-right: 2px solid #9ec0db;
   border-bottom: 2px solid #a0cea7;
+  font-size: 12px;
+  font-family: 'Times New Roman', Times, serif;
+  flex-grow: 1;
+  
   }
   
   div.header {
@@ -104,9 +98,9 @@ div.grid {
     font-weight: bold;
   }
   
-  /* div.header h3{
-   letter-spacing: 10px;
-  } */
+  h2 {
+    font-size: medium;
+  }
   
   div.socials {
     grid-column: 1/2;
@@ -163,6 +157,7 @@ div.grid {
 
   li {
     list-style: none;
+    font-size: 12px;
   }
 
   .lang {

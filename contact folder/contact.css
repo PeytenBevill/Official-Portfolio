@@ -61,30 +61,23 @@ a {
   box-shadow: none !important;
 }
 
-/* main */
 
 .main {
-  margin: 1% 20%;
-  height: 100vh;
+  border: 0px;
+  height: 90%;
+  /* margin: 0% 28%; */
+  background-color: #62987a;
+  opacity: 0.8;
+  background-image: radial-gradient(#a0c1af 0.5px, #62987a 0.5px);
+  background-size: 10px 10px;
   display: flex;
-  /* justify-content: center; */
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.firstParagraph {
-  margin-top: 4%;
-}
-
-img {
-  margin-top: 4%;
-  border-radius: 50%;
-  width: 432px;
-  height: auto;
-}
-
-.secondParagraph {
-  margin-top: 4%;
+.main > button {
+  border-radius: 5px;
 }
 
 @media (max-width: 990px){

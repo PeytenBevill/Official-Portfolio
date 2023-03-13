@@ -1,9 +1,10 @@
 body {
 margin-bottom: 0px;
+padding-bottom: 20px;
 }
 
-nav.navbar .navbar-expand-lg .bg-body-tertiary {
-  background-color: transparent;
+.bg-body-tertiary {
+  background-color: transparent !important;
 }
 
 .logo {
@@ -26,6 +27,16 @@ nav.navbar .navbar-expand-lg .bg-body-tertiary {
   font-size: 16px;
 }
 
+.navbar {
+  background: linear-gradient(to left, transparent 50%, #cfecd0, #a0cea7, #9ec0db) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+
+.navbar:hover {
+  background-position: left;
+}
+
 a {
   margin: 20px;
   font-family: sans-serif;
@@ -45,11 +56,20 @@ a {
   100% { transform: scale(1); }
 }
 
+.navbar-toggler {
+  border: 2px solid black;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
 /* main */
 
 div.grid {
-  height: 100vh;
-  margin: 0% 25%;
+  height: fit-content;
+  margin: 1% 25%;
   display: grid !important;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr .5fr .5fr 2fr;
@@ -60,7 +80,6 @@ div.grid {
   font-size: 12px;
   font-family: 'Times New Roman', Times, serif;
   flex-grow: 1;
-  
   }
   
   div.header {
@@ -80,14 +99,14 @@ div.grid {
     flex-direction: row;
   }
   
-  div.header img {
-    width: 150px;
+  /* div.header img {
+    width: 150px; */
     /* object-fit: cover; */
-    margin-top: 5%;
+    /* margin-top: 5%;
     margin-left: 10%;
     border-radius: 500px;
   }
-  
+   */
   p.first {
     font-size: 32px;
     margin-right: 4px;
@@ -140,6 +159,7 @@ div.grid {
     grid-row: 3/5;
     /* background-color: rgb(64, 63, 63); */
     padding-left: 5%;
+    padding-bottom: 2%;
   }
   div.experience p {
     font-size: 12px;
@@ -150,6 +170,7 @@ div.grid {
     grid-row: 4/5;
     /* background-color: rgb(35, 34, 34); */
     padding-left: 5%;
+    padding-bottom: 2%;
   }
   div.education p {
     font-size: 12px;
@@ -166,4 +187,53 @@ div.grid {
   
   .position {
     text-decoration: underline;
+  }
+  .blank {
+    height: 20px;
+  }
+
+  @media (max-width: 990px){
+    body {
+      padding: 0px;
+    }
+    .navbar{
+      background: none;
+    }
+    .logo {
+      padding: 0% 2%;
+    }
+    div.grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 100px 60px .5fr 100px 1fr 1fr;
+      margin: 0% 0%;
+
+    }
+    div.header {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      height: 100px;
+      width: auto;
+    }
+    div.socials {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      padding-top: 0px;
+    }
+    div.profile {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+    div.skills {
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
+    div.education {
+      grid-column: 1/2;
+      grid-row: 5/6;
+    }
+    div.experience {
+      grid-column: 1/2;
+      grid-row: 6/7;
+    }
+
   }

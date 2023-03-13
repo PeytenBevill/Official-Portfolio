@@ -2,8 +2,8 @@ body {
 
 }
 
-nav.navbar .navbar-expand-lg .bg-body-tertiary {
-  background-color: transparent;
+.bg-body-tertiary {
+  background-color: white !important;
 }
 
 .logo {
@@ -20,6 +20,16 @@ nav.navbar .navbar-expand-lg .bg-body-tertiary {
   /* margin: 2% 200px; */
   padding: 0% 1%;
   animation: logo 1s ease;
+}
+
+.navbar {
+  background: linear-gradient(to left, transparent 50%, #cfecd0, #a0cea7, #9ec0db) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+
+.navbar:hover {
+  background-position: left;
 }
 
 
@@ -40,6 +50,15 @@ a {
   50% { transform: rotate(20deg) scale(1.2); }
   70% { transform: rotate(0deg) scale(1.2); }
   100% { transform: scale(1); }
+}
+
+.navbar-toggler {
+  border: 2px solid black;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none !important;
 }
 
 
@@ -89,6 +108,8 @@ div.background > .image1 {
   border-radius: 70% 30% 30% 60% / 60% 40%;
   top: 0;
   left: 0;
+  height: 425px;
+  width: 425px;
 }
 
 div.background > .image2 {
@@ -98,6 +119,26 @@ div.background > .image2 {
   border-radius: 50% 30% 30% 45% / 60% 40%;
   width: 400px;
   height: auto;
+}
+
+@media (max-width: 990px){
+  .navbar{
+    background: none;
+  }
+  .logo {
+    padding: 0% 2%;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .background {
+    max-width: 232px;
+    min-width: 200px;
+  }
+
 }
 
 

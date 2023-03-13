@@ -2,8 +2,8 @@ body {
 
 }
 
-nav.navbar .navbar-expand-lg .bg-body-tertiary {
-  background-color: transparent;
+.bg-body-tertiary {
+  background-color: white !important;
 }
 
 .logo {
@@ -22,7 +22,15 @@ nav.navbar .navbar-expand-lg .bg-body-tertiary {
   animation: logo 1s ease;
 }
 
+.navbar {
+  background: linear-gradient(to left, transparent 50%, #cfecd0, #a0cea7, #9ec0db) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
 
+.navbar:hover {
+  background-position: left;
+}
 
 a {
   margin: 20px;
@@ -40,4 +48,22 @@ a {
   50% { transform: rotate(20deg) scale(1.2); }
   70% { transform: rotate(0deg) scale(1.2); }
   100% { transform: scale(1); }
+}
+
+.navbar-toggler {
+  border: 2px solid black;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+@media (max-width: 990px){
+  .navbar{
+    background: none;
+  }
+  .logo {
+    padding: 0% 2%;
+  }
 }

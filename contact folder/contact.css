@@ -66,14 +66,18 @@ a {
   border: 0px;
   height: 90%;
   /* margin: 0% 28%; */
-  background-color: #62987a;
+  background-color: #a0cea7;
   opacity: 0.8;
-  background-image: radial-gradient(#a0c1af 0.5px, #62987a 0.5px);
+  background-image: radial-gradient(#cfecd0 0.5px, #a0cea7 0.5px);
   background-size: 10px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+p {
+  text-align: center;
 }
 
 .main > button {

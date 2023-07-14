@@ -1,6 +1,7 @@
 body {
-margin-bottom: 0px;
-padding-bottom: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+  font-family: sans-serif;
 }
 
 .bg-body-tertiary {
@@ -29,8 +30,8 @@ padding-bottom: 20px;
 
 .navbar {
   background: linear-gradient(to left, transparent 50%, #cfecd0, #a0cea7, #9ec0db) right;
-    background-size: 200%;
-    transition: .5s ease-out;
+  background-size: 200%;
+  transition: .5s ease-out;
 }
 
 .navbar:hover {
@@ -78,7 +79,7 @@ div.grid {
   border-right: 2px solid #9ec0db;
   border-bottom: 2px solid #a0cea7;
   font-size: 12px;
-  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Times New Roman', Times, serif; */
   flex-grow: 1;
   }
   

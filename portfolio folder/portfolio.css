@@ -86,6 +86,7 @@ a {
   background-color: black;
   color: white;
   padding: 2%;
+  margin: 0 2%;
 }
 
 .buttons > button > a {

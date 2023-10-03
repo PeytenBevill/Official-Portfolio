@@ -77,7 +77,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 6% 32%;
+  margin: 6% 30%;
 }
 
 .buttons > button {
@@ -85,7 +85,7 @@ a {
   border-radius: 5px;
   background-color: black;
   color: white;
-  padding: 1%;
+  /* padding: 1%; */
   margin: 0 2%;
 }
 

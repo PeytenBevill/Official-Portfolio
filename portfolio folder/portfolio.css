@@ -42,7 +42,106 @@ a {
   list-style: none;
 }
 
+.testContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3% 12%;
+  
+}
 
+.testContainer > h1 {
+  grid-column: 1/2;
+}
+
+.testContainer > img {
+  grid-column: 1/2;
+  width: 680px;
+  height: auto;
+}
+
+.testContainer > h3 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding-left: 4%;
+}
+
+.testContainer > p {
+  padding-top: 5%;
+  padding-left: 4%;
+  grid-column: 2/3;
+  text-align: left;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6% 36%;
+}
+
+.buttons > button {
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  padding: 2%;
+}
+
+.buttons > button > a {
+  color: white;
+}
+
+.label {
+  margin-left: 430px;
+  margin-top: 2%;
+}
+
+.other {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 400px;
+}
+
+.other > span {
+  margin-right: 2%;
+}
+
+.images {
+  width: 300px;
+  height: auto;
+}
+
+.view {
+  border: none;
+  border-radius: 5px;
+  color: black;
+}
+
+.view:hover {
+  background-color: #a0cea7;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: .5fr 1fr .5fr;
+  margin: 1% 7%;
+  border-bottom: 2px solid rgb(189, 188, 188);
+}
+
+.row > h4 {
+  grid-column: 1/2;
+}
+
+.description {
+  grid-column: 2/3;
+}
+
+.jsButton {
+  grid-column: 3/4;
+}
 
 @keyframes logo {
   30% { transform: scale(1.2); }

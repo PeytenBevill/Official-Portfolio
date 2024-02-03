@@ -124,7 +124,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 0 400px;
+  margin: 0 400px 3% 400px;
 }
 
 .other > span {

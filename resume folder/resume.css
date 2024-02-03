@@ -74,7 +74,7 @@ div.grid {
   display: grid !important;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr .5fr .5fr 2fr;
-  gap: 4%;
+  gap: 1%;
   border-left: 2px solid #cfecd0;
   border-right: 2px solid #9ec0db;
   border-bottom: 2px solid #a0cea7;
@@ -113,11 +113,6 @@ div.grid {
     margin-right: 4px;
   }
   
-  p.last {
-    font-size: 32px;
-    font-weight: bold;
-  }
-  
   h2 {
     font-size: medium;
   }
@@ -127,7 +122,6 @@ div.grid {
     grid-row: 2/3;
     /* background-color: white; */
     padding-left: 5%;
-    padding-top: 10%;
   }
   
   div.socials p {
@@ -141,6 +135,7 @@ div.grid {
     /* background-color: rgb(121, 118, 118); */
     padding-left: 5%;
   }
+
   p.profileText {
     font-size: 12px;
   }

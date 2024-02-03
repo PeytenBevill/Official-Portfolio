@@ -1,7 +1,3 @@
-body {
-
-}
-
 .bg-body-tertiary {
   background-color: white !important;
 }
@@ -64,7 +60,7 @@ a {
 /* main */
 
 .main {
-  margin: 1% 20%;
+  margin: 1% 30%;
   height: 100vh;
   display: flex;
   /* justify-content: center; */

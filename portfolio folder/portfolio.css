@@ -3,7 +3,7 @@
 }
 
 .logo {
-  font-family: 'Tilt Prism', cursive;
+  font-family: "Tilt Prism", cursive;
   grid-column: 1/2;
   display: flex;
   justify-content: center;
@@ -19,9 +19,16 @@
 }
 
 .navbar {
-  background: linear-gradient(to left, transparent 50%, #cfecd0, #a0cea7, #9ec0db) right;
-    background-size: 200%;
-    transition: .5s ease-out;
+  background: linear-gradient(
+      to left,
+      transparent 50%,
+      #cfecd0,
+      #a0cea7,
+      #9ec0db
+    )
+    right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
 }
 
 .navbar:hover {
@@ -42,7 +49,6 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 3% 12%;
-  
 }
 
 .testContainer > h1 {
@@ -133,9 +139,11 @@ a {
 }
 
 .view {
+  padding: 2% 3%;
   border: none;
   border-radius: 5px;
   color: black;
+  background-color: rgb(226, 226, 226);
 }
 
 .view:hover {
@@ -144,7 +152,7 @@ a {
 
 .row {
   display: grid;
-  grid-template-columns: .5fr 1fr .5fr;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
   margin: 1% 7%;
   border-bottom: 2px solid rgb(189, 188, 188);
 }
@@ -165,8 +173,8 @@ a {
   background-color: #9ec0db;
   padding: 10px;
   border-radius: 5px;
-  position: absolute;
-  bottom: 50px;
+  position: fixed;
+  bottom: 40px;
   border: 3px solid transparent;
 }
 
@@ -176,12 +184,27 @@ a {
   border: 3px solid #9ec0db;
 }
 
+.row > h4 {
+  color:#5e84a4;
+}
+
 @keyframes logo {
-  30% { transform: scale(1.2); }
-  40%, 60% { transform: rotate(-20deg) scale(1.2); }
-  50% { transform: rotate(20deg) scale(1.2); }
-  70% { transform: rotate(0deg) scale(1.2); }
-  100% { transform: scale(1); }
+  30% {
+    transform: scale(1.2);
+  }
+  40%,
+  60% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .navbar-toggler {
@@ -193,11 +216,40 @@ a {
   box-shadow: none !important;
 }
 
-@media (max-width: 990px){
-  .navbar{
+@media (max-width: 990px) {
+  .navbar {
     background: none;
   }
   .logo {
     padding: 0% 2%;
+  }
+  .testContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .other, .label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .other > span {
+    margin-bottom: 5%;
+  }
+
+  .label {
+    margin-left: 3%;
+  }
+
+  .listOfProjects, .row {
+    display: flex;
+    flex-direction: column;
   }
 }

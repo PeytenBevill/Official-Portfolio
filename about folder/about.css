@@ -93,4 +93,8 @@ img {
   .logo {
     padding: 0% 2%;
   }
+
+  .main {
+    margin: 1% 10%;
+  }
 }

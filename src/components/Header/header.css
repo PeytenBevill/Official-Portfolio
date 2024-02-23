@@ -1,0 +1,59 @@
+.header-body {
+  background-color: #121212;
+  padding: 8px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  background: #121212 linear-gradient(to left, transparent 50%, #cfecd0, #a0cea7, #9ec0db) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+  overflow: hidden; 
+}
+.header-body:hover {
+  background-position: left;
+}
+.logo {
+  height: 4rem;
+  width: 4rem;
+  cursor: pointer;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+
+.link-text {
+  text-decoration: none;
+  color: white;
+  margin-right: 5rem;
+  border-bottom: solid 3px transparent;
+  cursor: pointer;
+}
+
+.link-text-active {
+  text-decoration: none;
+  color: white;
+  margin-right: 5rem;
+  border-bottom: solid 3px white;
+  cursor: pointer;
+}
+
+.mobileMenu {
+  position: absolute;
+  height: 100vh;
+  width: 70%;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  left: 40%;
+  padding: 4%;
+}
+
+.mobile-text {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 25px;
+}

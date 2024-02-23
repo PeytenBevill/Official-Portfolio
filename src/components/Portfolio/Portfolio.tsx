@@ -75,7 +75,7 @@ const Portfolio: React.FC = () => {
                   className="project-image"
                 />
                 <p className="title">{project.name}</p>
-                <a href={project.src} className="a-tag">
+                <a href={project.link} className="a-tag">
                   View
                 </a>
               </div>
@@ -93,7 +93,7 @@ const Portfolio: React.FC = () => {
                   className="project-image"
                 />
                 <p className="title">{project.name}</p>
-                <a href={project.src} className="a-tag">
+                <a href={project.link} className="a-tag">
                   View
                 </a>
               </div>

@@ -66,6 +66,7 @@
 .noneYet {
   color: white;
   text-align: center;
+  grid-column: 1/3;
 }
 
 @media (max-width: 990px) {

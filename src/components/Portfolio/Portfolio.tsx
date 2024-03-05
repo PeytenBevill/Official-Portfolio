@@ -75,14 +75,14 @@ const Portfolio: React.FC = () => {
                   className="project-image"
                 />
                 <p className="title">{project.name}</p>
-                <a href={project.link} className="a-tag">
+                <a href={project.link} target="_blank" className="a-tag">
                   View
                 </a>
               </div>
             ))}
           </>
         ) : noContent ? (
-          <p>More projects will be uploaded soon, stay tuned!</p>
+          <p className="noneYet">More projects will be uploaded soon, stay tuned!</p>
         ) : (
           <>
             {portfolioArray.map((project, index) => (
@@ -93,7 +93,7 @@ const Portfolio: React.FC = () => {
                   className="project-image"
                 />
                 <p className="title">{project.name}</p>
-                <a href={project.link} className="a-tag">
+                <a href={project.link} target="_blank" className="a-tag">
                   View
                 </a>
               </div>

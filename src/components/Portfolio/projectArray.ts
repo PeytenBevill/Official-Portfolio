@@ -94,10 +94,17 @@ export const projectArray = [
     link: 'https://papaya-paprenjak-1f5aa6.netlify.app',
     src: '/petGuide.png',
     tags: ['HTML', 'CSS', 'JavaScript', 'Express', 'Node', 'React', 'MySQL']
-  }, {
+  }, 
+  {
     name: 'Pokemon React Native App',
     link: 'https://snack.expo.dev/@psb2000/pokemon-app',
     src: 'https://i.morioh.com/210108/e0f8ad22.webp',
     tags: ['HTML', 'JavaScript', 'React Native']
+  },
+  {
+    name: 'Ziggify',
+    link: 'https://ziggify.netlify.app',
+    src: '/ziggify.png',
+    tags: ['HTML', 'CSS', 'TypeScript', 'React', 'React Native', 'Node', 'Express', 'MongoDB']
   }
 ];

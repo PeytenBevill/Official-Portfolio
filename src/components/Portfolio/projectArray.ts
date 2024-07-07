@@ -87,7 +87,7 @@ export const projectArray = [
     name: 'Fake Job Application',
     link: 'https://fake-job-app.netlify.app',
     src: '/fake-job.png',
-    tags: ['HTML', 'CSS', 'TypeScript', 'Redux', 'React']
+    tags: ['HTML', 'Tailwind', 'TypeScript', 'Redux', 'React']
   },
   {
     name: 'PetGuide',
@@ -102,9 +102,25 @@ export const projectArray = [
     tags: ['HTML', 'JavaScript', 'React Native']
   },
   {
+    name: 'Edugen',
+    src: '/edugen.png',
+    tags: ['HTML', 'Tailwind', 'JavaScript', 'React', 'Node', 'Express', 'MongoDB', 'OpenAI']
+  },
+  {
     name: 'Ziggify',
     link: 'https://ziggify.netlify.app',
     src: '/ziggify.png',
     tags: ['HTML', 'CSS', 'TypeScript', 'React', 'React Native', 'Node', 'Express', 'MongoDB']
+  },
+  {
+    name: 'Creative Unison',
+    src: '/cu.png',
+    tags: ['HTML', 'CSS', 'TypeScript', 'React', 'Redux', 'MySQL']
+  },
+  {
+    name: 'Owting',
+    link: 'https://owting.com/',
+    src: '/owting.png',
+    tags: ['HTML', 'TypeScript', 'React', 'Redux', 'React Native', 'Node', 'Next']
   }
 ];
